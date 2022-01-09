@@ -18,7 +18,8 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Mobile dev with Kelvin
+title: Mobile dev with kelvin
+email: kelvinharron@outlook.com
 description: >- # this means to ignore newlines until "baseurl:"
   All things mobile app development
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -27,13 +28,9 @@ url: "https://kelvinharron.com" # the base hostname & protocol for your site, e.
 # Build settings
 google_analytics: G-2X3D6YQR8G
 
-minima:
-  skin: dark
-  social_links:
-    twitter: kelvinharron
-    github: kelvinharron
 theme: minima
-ignore_theme_config: true
+twitter_username: kelvinharron
+github_username:  kelvinharron
 
 plugins:
   - jekyll-feed

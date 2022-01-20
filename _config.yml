@@ -1,7 +1,7 @@
 title: Dev with Kelvin
 description: All things Software
 author: "Kelvin Harron"
-theme: minima
+theme: jekyll/minima
 show_excerpts: true
 
 base_url: /about
@@ -17,6 +17,7 @@ minima:
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-remote-theme
 
 header_pages:
   - _pages/frontpage.markdown

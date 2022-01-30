@@ -1,7 +1,7 @@
 title: Dev with Kelvin
 description: All things Software
 author: "Kelvin Harron"
-theme: jekyll/minima
+theme: minima
 show_excerpts: true
 
 base_url: /about

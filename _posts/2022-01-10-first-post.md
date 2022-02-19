@@ -12,11 +12,11 @@ If you're considering using GitHub pages and want to provide an Apex domain (kel
 
 The very first thing is to purchase the domain you would like to use. GoDaddy is a domain provider we've all heard of but reading around a little, NameSilo came up a favourite for many as a simple, cheap and no-hassle solution. It defiantly doesn't have as much style but functionally, it will do the job. The next thing was to configure my apex domain with GitHub Pages for this very blog, but the below was giving errorsa around resolving the DNS.
 
-![GitHub HTTPS enabled](/assets/github-https-enabled.png)
+![GitHub HTTPS enabled](../assets/2022-01-10-first-post/github-https-enabled.png)
 
 I found [an old post](https://chenhuijing.com/blog/setting-up-custom-domain-github-pages/#%F0%9F%87%B2%F0%9F%87%BE) on how to pair NameSilo with GitHub Pages exactly as I needed but figured going as far as Cloudflare was excessive, so with a little fiddling I was able to avoid that approach and just use my domain provider. In NameSilo's domaim manager for your website, they provide multiple templates to get you started. I just entered the appropriate A and AAAA values as detailed [here](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site#configuring-an-apex-domain) as GitHub can take care of creating a CNAME file for you. You can see how it looks below:
 
-![Name SIlo Setup](/assets/name-silo-apex-domains.png)
+![Name Silo Setup](../assets/2022-01-10-first-post/name-silo-apex-domains.png)
 
 It can take over 24 hours for these values to propagate, but you should be able to apply your apex domain name and enable HTTPS, so folks who find your website will not get any security warnings from their browsers.
 
@@ -40,7 +40,7 @@ A simple website with very limited functionality and content means you can serve
 
 The last time I had a website was back in 2010, my needs were very different and the web was a vastly different place. Check this out!
 
-![Old Website](/assets/old-website.jpg)
+![Old Website](../assets/2022-01-10-first-post/old-website.jpg)
 
 I do not remember how I set it up as part of my media course at the time. By choosing to create my blog, I could learn something new as my time as a mobile dev hasn't exposed me to anything like this.
 

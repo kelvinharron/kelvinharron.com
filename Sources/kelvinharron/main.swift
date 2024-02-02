@@ -33,5 +33,6 @@ try KelvinHarron().publish(using: [
     .generateSiteMap(),
     .generateHTML(withTheme: .foundation),
     .generateRSSFeed(including: [.about, .posts, .talks]),
-    .unwrap(.gitHub("kelvinharron/kelvinharron.com", useSSH: true), PublishingStep.deploy)
+    .unwrap(.gitHub("kelvinharron/kelvinharron.com", useSSH: false), PublishingStep.deploy)
 ])
+

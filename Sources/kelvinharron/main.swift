@@ -27,5 +27,5 @@ try KelvinHarron().publish(using: [
     .generateSiteMap(),
     .generateHTML(withTheme: .foundation),
     .generateRSSFeed(including: [.about, .posts, .talks]),
-    .unwrap(.gitHub("kelvinharron/kelvinharron.com", branch: "main", useSSH: false), PublishingStep.deploy)
+    .unwrap(.gitHub("kelvinharron/kelvinharron.com", branch: "master", useSSH: false), PublishingStep.deploy)
 ])

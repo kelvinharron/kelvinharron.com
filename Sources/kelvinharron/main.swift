@@ -17,13 +17,7 @@ struct KelvinHarron: Website {
     var name = "kelvinharron"
     var language: Language { .english }
     var imagePath: Path? { nil }
-    var description: String {
-        """
-        Hey, I’m Kelvin.
-
-        My blog will focus on my day-to-day learnings and protips from working on mobile app development, primarily in native Android. My goals in 2022 2023 are to gain a strong understanding of the alternatives to native iOS and Android development, including KMM, Flutter and more. Check my Twitter where I’ll share my updates.
-        """
-    }
+    var description: String = ""
 }
 
 // This will generate your website using the built-in Foundation theme:
@@ -33,6 +27,5 @@ try KelvinHarron().publish(using: [
     .generateSiteMap(),
     .generateHTML(withTheme: .foundation),
     .generateRSSFeed(including: [.about, .posts, .talks]),
-    .unwrap(.gitHub("kelvinharron/kelvinharron.com", useSSH: false), PublishingStep.deploy)
+    .unwrap(.gitHub("kelvinharron/kelvinharron.com", branch: "main", useSSH: false), PublishingStep.deploy)
 ])
-

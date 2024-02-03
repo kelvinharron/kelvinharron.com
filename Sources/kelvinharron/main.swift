@@ -14,7 +14,7 @@ struct KelvinHarron: Website {
     }
 
     var url = URL(string: "https://kelvinharron.com")!
-    var name = "kelvinharron"
+    var name = "Kelvin Harron"
     var language: Language { .english }
     var imagePath: Path? { nil }
     var description: String = ""

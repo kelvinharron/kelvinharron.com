@@ -4,8 +4,8 @@ import Publish
 
 struct KelvinHarron: Website {
     enum SectionID: String, WebsiteSectionID {
-        case posts
         case about
+        case posts
         case talks
     }
 

@@ -6,7 +6,6 @@ struct KelvinHarron: Website {
     enum SectionID: String, WebsiteSectionID {
         case about
         case posts
-        case talks
     }
 
     struct ItemMetadata: WebsiteItemMetadata {

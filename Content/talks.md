@@ -1,4 +1,4 @@
-#  Talks
+# Talks
 
 ## Compose In Practice - November 2022
 DevFest All Ireland with Garth Gilmour. My first recorded public talk 😅!

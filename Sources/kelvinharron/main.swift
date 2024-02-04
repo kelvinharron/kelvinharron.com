@@ -17,7 +17,7 @@ struct KelvinHarron: Website {
     // Update these properties to configure your website:
     var url = URL(string: "https://kelvinharron.com")!
     var name = "Kelvin Harron"
-    var description = "A Staff Engineer figuring it all out"
+    var description = "Ramblings of a Staff Engineer focused on native Mobile development"
     var language: Language { .english }
     var imagePath: Path? { nil }
 }

@@ -8,5 +8,3 @@ DevFest All Ireland with Garth Gilmour. My first recorded public talk 😅!
 ## Compose In Practice - September, 2022
 
 todo add slides
-
-

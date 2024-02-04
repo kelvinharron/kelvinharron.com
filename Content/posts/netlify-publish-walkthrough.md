@@ -1,7 +1,7 @@
 ---
 date: 2024-02-03 22:10
 description: Because Jekyll and GitHub Pages are too fiddly! 
-tags: swift, hosting, published
+tags: swift, hosting, publish
 ---
 
 # Hosting a Swift Publish blog on Netlify

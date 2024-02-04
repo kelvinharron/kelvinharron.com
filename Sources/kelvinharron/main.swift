@@ -25,3 +25,11 @@ struct KelvinHarron: Website {
 // This will generate your website using the built-in Foundation theme:
 try KelvinHarron()
     .publish(withTheme: .foundation)
+
+try KelvinHarron().publish(using: [
+    .addMarkdownFiles(),
+    .copyResources(),
+    .generateHTML(withTheme: .foundation),
+    .generateRSSFeed(including: [.about, .posts]),
+    .generateSiteMap()
+])

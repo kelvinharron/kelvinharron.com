@@ -4,6 +4,8 @@ description: Because Jekyll and GitHub Pages are too fiddly!
 tags: swift, hosting, published
 ---
 
+# Hosting a Swift Publish blog on Netlify
+
 [GitHub Pages is excellent](https://pages.github.com/). You get free hosting of HTML-based websites, and you can extend that with [Jekyll](https://jekyllrb.com/), transforming markdown files into feature-rich and pleasing-looking pages. Using these together is the approach I took two years ago with my first attempt at blogging.
 
 When I decided to try again, I gave up on the first steps. The ruby version on my Mac needed to be newer to use the Jekyll template I had previously used, and between Cocaopods and Appium, I haven't had a great time with Gems or Ruby.

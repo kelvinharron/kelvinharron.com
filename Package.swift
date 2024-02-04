@@ -3,12 +3,12 @@
 import PackageDescription
 
 let package = Package(
-    name: "KelvinharronCom",
+    name: "kelvinharron",
     platforms: [.macOS(.v12)],
     products: [
         .executable(
-            name: "KelvinharronCom",
-            targets: ["KelvinharronCom"]
+            name: "kelvinharron",
+            targets: ["kelvinharron"]
         )
     ],
     dependencies: [
@@ -16,7 +16,7 @@ let package = Package(
     ],
     targets: [
         .executableTarget(
-            name: "KelvinharronCom",
+            name: "kelvinharron",
             dependencies: ["Publish"]
         )
     ]

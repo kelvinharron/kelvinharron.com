@@ -1,6 +1,6 @@
 import Foundation
-import Publish
 import Plot
+import Publish
 
 // This type acts as the configuration for your website.
 struct KelvinHarron: Website {
@@ -23,4 +23,5 @@ struct KelvinHarron: Website {
 }
 
 // This will generate your website using the built-in Foundation theme:
-try KelvinHarron().publish(withTheme: .foundation)
+try KelvinHarron()
+    .publish(withTheme: .foundation)

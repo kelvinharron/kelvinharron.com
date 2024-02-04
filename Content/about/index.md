@@ -1,2 +1,16 @@
 # About
 
+Hi, I'm Kelvin. I'm a Staff Engineer at Instil, a Consultancy based in Belfast, Northern Ireland.
+
+I got into the Software industry because I loved my Windows Phone 8 and wanted to learn how to make apps. Sadly, it was too late to make a difference 🥲 so I've done my best to make the most of building Native Android & iOS apps across industries such as sports, e-commerce, marketing and most recently the healthcare industry.
+
+## Talks
+
+### Compose In Practice - November 2022
+DevFest All Ireland with Garth Gilmour. My first recorded public talk 😅!
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0rnr4RF2lNo?si=9nTsh6PvFfDip6f0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+### Compose In Practice - September, 2022
+
+todo add slides

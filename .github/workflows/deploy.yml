@@ -36,18 +36,11 @@ jobs:
       - name: Generate Output
         run: publish-cli generate
 
-  deploy:
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - uses: jsmrcaga/action-netlify-deploy@v2.0.0
+      - name: Deploy Content
+        uses: peaceiris/actions-gh-pages@v3.9.3
         with:
-          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-          NETLIFY_DEPLOY_TO_PROD: true
-          NETLIFY_DEPLOY_MESSAGE: "Prod deploy v${{ github.ref }}"
-          install_command: "echo Skip install"
-          build_command: "echo skip build"
+            personal_token: ${{ secrets.PERSONAL_TOKEN }}
+            external_repository: kelvinharron/kelvinharron.com
+            publish_branch: main
+            publish_dir: ./Output
+            commit_message: ${{ github.event.head_commit.message }}

@@ -77,6 +77,6 @@ private extension Node where Context == HTML.BodyContext {
     static let linkToRSSFeed: Self =
         .a(
             .text("RSS Feed"),
-            .href("https://kelvinharron.com/feed.rss")
+            .href("feed.rss")
         )
 }

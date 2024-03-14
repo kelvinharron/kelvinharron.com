@@ -24,8 +24,7 @@ extension Node where Context == HTML.BodyContext {
                 .linkToMastodon,
                 .separator,
                 .linkToGithub,
-                .separator,
-                .linkToRSSFeed
+                .separator
             )
         )
     }
@@ -72,11 +71,5 @@ private extension Node where Context == HTML.BodyContext {
             .href("https://github.com/kelvinharron"),
             .target(.blank),
             .rel(.noreferrer)
-        )
-
-    static let linkToRSSFeed: Self =
-        .a(
-            .text("RSS Feed"),
-            .href("feed.rss")
         )
 }

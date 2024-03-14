@@ -1,11 +1,11 @@
 import Plot
 import Publish
 
+
+
 extension Theme where Site == KelvinHarron {
     static var custom: Self {
-        Theme(
-            htmlFactory: BlogHTMLFactory()
-        )
+        Theme(htmlFactory: BlogHTMLFactory())
     }
 
     private struct BlogHTMLFactory: HTMLFactory {
@@ -13,6 +13,7 @@ extension Theme where Site == KelvinHarron {
             try HTML(
                 .lang(context.site.language),
                 .head(for: index, on: context.site),
+                .clickyTrackerHead(),
                 .body(
                     .header(for: context, selectedSection: nil),
                     .wrapper(

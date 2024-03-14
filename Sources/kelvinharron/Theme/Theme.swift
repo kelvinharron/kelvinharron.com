@@ -13,7 +13,7 @@ extension Theme where Site == KelvinHarron {
             try HTML(
                 .lang(context.site.language),
                 .head(for: index, on: context.site),
-                .clickyTrackerHead(),
+                .googleTrackerHead(),
                 .body(
                     .header(for: context, selectedSection: nil),
                     .wrapper(

@@ -10,14 +10,18 @@ import Plot
 import Publish
 
 public extension Node where Context == HTML.DocumentContext {
-    static func clickyTrackerHead() -> Node {
-        .head(.script(.raw(
-            """
-            <a title="Google Analytics Alternative" href="https://clicky.com/101443661"><img alt="Clicky" src="//static.getclicky.com/media/links/badge.gif" border="0" /></a>
-            <script async data-id="101443661" src="//static.getclicky.com/js"></script>
-            """
-        )
-        )
-        )
+    static func googleTrackerHead() -> Node {
+        .head(
+            .script(
+                .src("https://www.googletagmanager.com/gtag/js?id=G-7P22WBBM3H")),
+            .script(
+                """
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);}
+                  gtag('js', new Date());
+
+                  gtag('config', 'G-7P22WBBM3H');
+                """
+            ))
     }
 }

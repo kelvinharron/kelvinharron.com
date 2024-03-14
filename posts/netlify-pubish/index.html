@@ -24,7 +24,7 @@
 						<a class="skip-to-content-link" href="#main">Skip to main content</a>
 						<div class="wrapper">
 								<a class="site-name" href="/">Kelvin's Blog</a>
-								<p>iOS Development + ramblings</p>
+								<p>Rambling about iOS Development</p>
 								<nav>
 										<ul>
 												<li>
@@ -50,7 +50,6 @@
     .<span class="call">copyResources</span>(),
     .<span class="call">generateSiteMap</span>(),
     .<span class="call">generateHTML</span>(withTheme: .<span class="dotAccess">foundation</span>),
-    .<span class="call">generateRSSFeed</span>(including: [.<span class="dotAccess">posts</span>]),
     .<span class="call">unwrap</span>(.<span class="call">gitHub</span>(<span class="string">"kelvinharron/kelvinharron.com"</span>, branch: <span class="string">"master"</span>, useSSH: <span class="keyword">true</span>), <span class="type">PublishingStep</span>.<span class="property">deploy</span>)
 ])
 </code></pre><p>You see, running <code>publish deploy</code> uses the value set in the <code>.unwrap</code> function to push the contents of the <code>Output</code> directory, your actual website that should be hosted. I didn't understand the workflow here, and GitHub Pages did want to host it on my custom domain. After some Googling and <a href="https://www.reddit.com/r/swift/comments/za11zu/comment/izjzl9q/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button">discovering that it won't work with the default theme</a> meant I had the choice of making a custom theme or looking for an alternative means to host.</p><p>After reading <a href="https://www.kprow.com/projects/swift-static-website-generator/">Kprow's blog</a>, I settled on Netlify as a host.</p><h2>Configuring Netlify as a Host</h2><p>The onboarding experience here is superb. Of course, it went wrong because I naively assumed I could ignore the <code>Output</code> directory where Publish places your generated website, but this failed.</p><p>Another issue I was surprised to solve easily was that Netlify, by default, installs Swift 5.4, but the latest version of Publish uses <code>// swift-tools-version:5.5</code>. To fix this on Netlify, &gt; Go to Your Website -&gt; Site Configuration -&gt; Environment variables -&gt; add <code>SWIFT_VERSION</code> and set the value to <code>5.5</code>. Done!</p><p>If you went through the onboarding successfully, Netlify will build your main branch on change and publish it to a <code>netlify.app</code> domain. Almost there!</p><h2>Configure your custom domain to Netlify</h2><p>If you want to use <code>yourname.com</code> instead of <code>yourname.netlify.app</code> or the like, you must purchase your domain. I used <a href="https://www.namesilo.com/">NameSilo</a> to do this.</p><h3>Setting the A and CNAME DNS</h3><p>To let Netlify host on <code>yourname.com</code> or equivalent, tell your domain host about Netlify. To do this for NameSilo, access the <a href="https://www.namesilo.com/account_domain_manage_dns.php">Manage DNS page</a> and set the <code>A</code> type to the IP address Netlify gives in its setup, and <code>apex-loadbalancer.netlify.com</code> for the <code>CNAME</code> type for the www. part of your website. It can take 15+ minutes for the changes to propagate, and when done correctly, Netlify will acknowledge it under its Production domains. ✅</p><p>Now you're flying! While this is a high-level summary, I plan to record the flow end to end as an exercise and a good introduction for me on streaming. If you get stuck at any point, please get in touch via Twitter / X, and I'll be happy to help!</p>
@@ -81,7 +80,6 @@
 								<a href="https://twitter.com/kelvinharron" target="_blank" rel="noreferrer">X</a> | 
 								<a href="https://iosdev.space/@kelvinharron" target="_blank" rel="me noreferrer">Mastodon</a> | 
 								<a href="https://github.com/kelvinharron" target="_blank" rel="noreferrer">GitHub</a> | 
-								<a href="feed.rss">RSS Feed</a>
 						</p>
 				</footer>
 		</body>

@@ -23,8 +23,7 @@ extension Node where Context == HTML.BodyContext {
                 .separator,
                 .linkToMastodon,
                 .separator,
-                .linkToGithub,
-                .separator
+                .linkToGithub
             )
         )
     }
